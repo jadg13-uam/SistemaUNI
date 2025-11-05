@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaUNI.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace SistemaUNI
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRegistro frm = new FrmRegistro();
+            frm.Show();
         }
     }
 }

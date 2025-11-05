@@ -31,7 +31,7 @@ namespace SistemaUNI.Controlador
             return resultado;
         }
 
-        public List<Carrera> GetCarreraes()
+        public List<Carrera> GetCarreras()
         {
             return listaCarrera;
         }

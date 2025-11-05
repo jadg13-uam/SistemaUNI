@@ -17,7 +17,7 @@ namespace SistemaUNI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistro());
+            Application.Run(new Form1());
         }
     }
 }
