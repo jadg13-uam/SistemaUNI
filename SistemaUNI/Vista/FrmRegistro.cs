@@ -81,8 +81,13 @@ namespace SistemaUNI.Vista
         {
             if(treeView1.SelectedNode != null)
             {
-                string carrera = lbCarreras.SelectedItems.ToString()    ;
-                treeView1.SelectedNode.Nodes.Add(carrera.ToString());
+                if (lbCarreras.Items.Count > 0)
+                {
+                    var carrera = lbCarreras.SelectedItems[0];
+                    treeView1.SelectedNode.Nodes.Add(carrera.ToString());
+                    treeView1.ExpandAll();
+                    lbCarreras.Items.Remove(carrera);
+                }
                     
             }
         }
