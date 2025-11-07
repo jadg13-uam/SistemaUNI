@@ -46,11 +46,13 @@
             this.tbNombreCarrera = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lbCarreras = new System.Windows.Forms.ListBox();
             this.btnAsignar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label5 = new System.Windows.Forms.Label();
-            this.lbCarreras = new System.Windows.Forms.ListBox();
+            this.btnQuitar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,6 +85,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.btnAgregarFac);
             this.groupBox1.Controls.Add(this.tbCodigoFac);
             this.groupBox1.Controls.Add(this.label2);
@@ -224,6 +227,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnQuitar);
             this.tabPage3.Controls.Add(this.lbCarreras);
             this.tabPage3.Controls.Add(this.btnAsignar);
             this.tabPage3.Controls.Add(this.label6);
@@ -236,13 +240,22 @@
             this.tabPage3.Text = "Asignar Carrera";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // lbCarreras
+            // 
+            this.lbCarreras.FormattingEnabled = true;
+            this.lbCarreras.ItemHeight = 16;
+            this.lbCarreras.Location = new System.Drawing.Point(367, 31);
+            this.lbCarreras.Name = "lbCarreras";
+            this.lbCarreras.Size = new System.Drawing.Size(164, 324);
+            this.lbCarreras.TabIndex = 5;
+            // 
             // btnAsignar
             // 
             this.btnAsignar.Location = new System.Drawing.Point(240, 59);
             this.btnAsignar.Name = "btnAsignar";
             this.btnAsignar.Size = new System.Drawing.Size(107, 38);
             this.btnAsignar.TabIndex = 4;
-            this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.Text = "<<";
             this.btnAsignar.UseVisualStyleBackColor = true;
             this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
@@ -271,14 +284,24 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Facultades";
             // 
-            // lbCarreras
+            // btnQuitar
             // 
-            this.lbCarreras.FormattingEnabled = true;
-            this.lbCarreras.ItemHeight = 16;
-            this.lbCarreras.Location = new System.Drawing.Point(367, 31);
-            this.lbCarreras.Name = "lbCarreras";
-            this.lbCarreras.Size = new System.Drawing.Size(164, 324);
-            this.lbCarreras.TabIndex = 5;
+            this.btnQuitar.Location = new System.Drawing.Point(240, 114);
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.Size = new System.Drawing.Size(107, 38);
+            this.btnQuitar.TabIndex = 6;
+            this.btnQuitar.Text = ">>";
+            this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(28, 218);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(225, 52);
+            this.btnEliminar.TabIndex = 5;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // FrmRegistro
             // 
@@ -327,5 +350,7 @@
         private System.Windows.Forms.TextBox tbPrecioCarrera;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox lbCarreras;
+        private System.Windows.Forms.Button btnQuitar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
